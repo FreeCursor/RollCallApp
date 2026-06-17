@@ -33,6 +33,16 @@ public class CallRollName {
 
         // 5. read list
         Random random = new Random();
+//      ~~~~ advanced version of start button
+//        startButton.addActionListener(e -> {
+//    if (nameList.isEmpty()) {
+//        nameLabel.setText("名单为空！");
+//        return;
+//    }
+//    int randomIndex = random.nextInt(nameList.size());
+//    String luckyStudent = nameList.get(randomIndex);
+//    nameLabel.setText(luckyStudent);
+//});
         startButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {

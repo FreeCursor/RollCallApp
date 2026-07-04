@@ -19,7 +19,7 @@ public class CallRollNameV2_1 {
     public static void main(String[] args) {
         loadNamesFromFile();
 
-        JFrame frame = new JFrame("智能滚动点名系统 v2.0 🎲");
+        JFrame frame = new JFrame("智能滚动点名系统 v2.0 ");
         frame.setSize(400, 350);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setLayout(new BorderLayout());
@@ -27,7 +27,7 @@ public class CallRollNameV2_1 {
         JLabel nameLabel = new JLabel("准备点名", SwingConstants.CENTER);
         nameLabel.setFont(new Font("微软雅黑", Font.BOLD, 38));
 
-        JButton startButton = new JButton("开启幸运抽奖 🎯");
+        JButton startButton = new JButton("开始点名 ");
         startButton.setFont(new Font("微软雅黑", Font.PLAIN, 18));
 
         // main codes
@@ -39,7 +39,7 @@ public class CallRollNameV2_1 {
                     nameLabel.setText("名单文件为空！");
                     return;
                 }
-                JOptionPane.showMessageDialog(frame, "🎉 全班已轮完一遍，自动重置名单！");
+                JOptionPane.showMessageDialog(frame, " 全班已轮完一遍，自动重置名单！");
             }
 
             // 2. 禁用按钮，防止滚动期间被重复点击
@@ -102,7 +102,7 @@ public class CallRollNameV2_1 {
         }
     }
 
-    // 💾 保存记录到本地文件的聪明函数
+    //  保存记录到本地文件的聪明函数
     private static void saveToHistory(String name) {
         try {
             // 使用追加模式（true）打开文件写入器
